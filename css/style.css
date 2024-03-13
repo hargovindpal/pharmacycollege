@@ -139,7 +139,7 @@ figure img{
 .form-container{
     display: none;
     position: fixed;
-    background-color: #d8dad9;
+    background-color: whitesmoke;
     width: 600px;
     padding:15px;
     top:0;
@@ -199,7 +199,7 @@ figure img{
     outline: none;
     width: 100%;
     height: 40px;
-    background-color: #d8dad9e5;
+    background-color: white;
     font-size: 12px;
     font-weight: 600;
     
@@ -210,8 +210,8 @@ figure img{
     font-size: 13px;
     top:-10px;
     left:20px;
-    color: rgb(78, 74, 74);
-    background-color: #d8dad9e5;
+    color: rgba(78, 74, 74, 0.856);
+    background-color: white;
   }
 
   .enqry-form .form-group textarea{
@@ -237,7 +237,7 @@ figure img{
   .enqry-form .form-group input:placeholder-shown+ label{
     top:11px;
     left:20px;
-    background-color: #d8dad9e5;
+    background-color: white;
   }
   .enqry-form .form-group input:focus+ label,
   .enqry-form .form-group select:focus+ label,
