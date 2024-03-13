@@ -12,7 +12,7 @@
         var currentPage = window.location.pathname;
     
         // Specifying the target page where you want to show the form
-        var targetPage = '/index.html';
+        var targetPage = '';
     
         if (currentPage === targetPage) {
             if (showform) {
