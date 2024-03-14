@@ -5,6 +5,8 @@
     var toggle =  document.querySelector('.toggle-btn')
     var showform = document.querySelector('.form-container')
     var nav_item = document.querySelector('.nav-bar')
+    var slickContainer = document.querySelector('.slick-container')
+    
 
 
     window.onload = function() {
@@ -75,6 +77,7 @@
     if(i <= 1){
     nav_item.style.visibility = 'visible';
     nav_item.style.position = 'relative';
+    slickContainer.style.marginTop = '0px';
     i++;
     }else{
         nav_item.style.visibility = 'hidden';
@@ -90,8 +93,8 @@ var imageContainer = document.querySelector('.show-big-container');
 var bigImage = document.querySelector('.big-image');
 var smallImages = document.querySelectorAll('.image');
 
-smallImages.forEach(function(smallImage) {
-
+smallImages.forEach(function(smallImage) 
+{
 smallImage.addEventListener('click',()=>{
 bigImage.src = smallImage.src;
 imageContainer.style.display = 'flex';
@@ -101,6 +104,6 @@ document.body.style.overflow = 'hidden';
 
 bigImage.addEventListener('click',()=>{
     imageContainer.style.display = 'none';
-    ocument.body.style.overflow = 'auto';
+    document.body.style.overflow = 'auto';
 });
     

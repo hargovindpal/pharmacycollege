@@ -120,19 +120,19 @@ figure img{
     color: #265e3d;
     font-weight:bolder;
     background-color:white;
-    border-radius: 10px;
+    border-radius: 5px;
     border:none;
     font-size: 15px;
     margin-bottom:5px;
-    padding:5px;
+    padding:10px;
     cursor: pointer;
     transition:all ease 0.3s;
 }
 .enquiry-btn:hover{
 
-    background-color: #ed3238;
+    background-color: #e69035;
     color:white;
-    transition:all ease 0.3s;
+    transition:all ease 0.2s;
     }
 
 
@@ -219,7 +219,6 @@ figure img{
     height: 60px;
   }
 
-  
 
   .enqry-form button{
     font-size: 15px;
@@ -260,16 +259,11 @@ figure img{
 
 
 
-
-
-
-
-
 .head .nav-bar {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 350px;
+    margin-left: 400px;
     margin-top: 20px;
     width: auto;
     height: 50px;
@@ -494,7 +488,7 @@ figure img{
 }
 
 .slide-container{
-    height: 400px;
+    
     width:100%;
     margin-top:50px;
     padding:10px;
@@ -516,7 +510,6 @@ figure img{
 .slide-container .slick-slider-2{
     margin-top:20px;
     padding-top:10px;
-    height: 380px;
     margin-left:0px;
     
     }
@@ -534,11 +527,8 @@ figure img{
   
   
  }
- .slick-slider-2 .slick-dots li {
-    display: none;
-    border-radius:25px;
-   
- }
+
+ 
  .testimonial-container {
     width: 93%;
     display: flex;
@@ -879,6 +869,7 @@ footer .copyright a:hover{
             display: inline;
             justify-content: left;
             visibility: hidden;
+            position: relative;
             
         }
         .head .nav-bar ul{
@@ -886,6 +877,7 @@ footer .copyright a:hover{
             align-items: center;
             background-color: #265e3d;
             margin-top:40px;
+            margin-bottom: 0px;
         }
         .head .nav-bar ul li a {
             color: white;
@@ -905,11 +897,13 @@ footer .copyright a:hover{
     }
     
     .container{
-        margin-bottom:50px !important;
+        margin-bottom:0px !important;
     }
     .slick-container{
+        display: flex;
         width: 100%;
-        margin:0;
+        margin-left:0px;
+        margin-top:50px;
         height: 300px;
     }
     .text-content{
@@ -942,9 +936,15 @@ footer .copyright a:hover{
         margin-left: 0;
         
     }
+    .slide-container {
+    margin:0px;
+   
+
+    }
     
     .slide-container .slick-slider-2{
         object-fit: contain;
+        
         
     }
     
