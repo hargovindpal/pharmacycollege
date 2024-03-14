@@ -32,16 +32,14 @@ background-color: #19e9c6;
 }
 .logo{
     position: absolute;
-    width: 350px;
-    height: 120px;
+    
     margin-top: 65px;
     overflow: hidden;
     
 }
 
 figure img{
-    
-    width:350px;
+    width:380px;
     height: auto;
     padding:5px;
     background-size: cover;
@@ -280,7 +278,7 @@ figure img{
 
 .head .nav-bar ul li {
     list-style: none;
-    padding: 10px 5px;
+    padding: 10px 8px;
     opacity: 1;
     text-align: left;
     position: relative;
@@ -289,7 +287,7 @@ figure img{
 }
 
 .head .nav-bar ul li a {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 800;
     text-decoration: none;
     color: #265e3d;
@@ -579,6 +577,8 @@ figure img{
     color: white;
     justify-content: justify;
     text-align: left;
+    height: 200px;
+    
 }
 
 .testimonial h3 {
@@ -587,6 +587,7 @@ figure img{
     color: #f69024;
 }
 #more{
+    position: relative;
     margin-bottom: 30px;
     padding:7px;
     align-items: center;
