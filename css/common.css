@@ -68,7 +68,7 @@
         width:93%;
         background-color:whitesmoke;
         border: none;
-        box-shadow: 2px 10px 10px 5px #00203FFF;
+        box-shadow: 2px 10px 10px 5px #265e3d;
         flex-wrap: wrap;
         padding:20px;
        
@@ -97,7 +97,7 @@
     .text-container .content img{
         margin-left:150px;
         margin-top:0px;
-        box-shadow: 0 4px 8px 0 #00203FFF;
+        box-shadow: 0 4px 8px 0 #265e3d;
         max-width: 300px;
         width: 100%;
         height: auto;
@@ -153,7 +153,7 @@
     max-width: 800px;
     width: 85%;
     height: auto;
-    box-shadow: 0 4px 8px 0 #00203FFF;
+    box-shadow: 0 4px 8px 0 #265e3d;
     }
     .text-container-2 .content img:hover{
     box-shadow: 0 4px 8px 0 red;
@@ -162,7 +162,7 @@
         width: 93%;
         height: 400px;
         margin:50px;
-        box-shadow: 0 2px 10px 0 #00203FFF;
+        box-shadow: 0 2px 10px 0 #265e3d;
 
     }
     .vision img{
@@ -204,7 +204,7 @@
     }
     .img-container .content img{
         margin:10px;
-       box-shadow:0 0 15px #00203FFF;
+       box-shadow:0 0 15px #265e3d;
         display: flex;
         height: 200px;
         width: 200px;
@@ -220,7 +220,7 @@
     .mand-disc{
         display: inline;
         margin:50px;
-        box-shadow:0 0 15px #00203FFF;
+        box-shadow:0 0 15px #265e3d;
         width: 93%;
         justify-content: center;
         align-items: center;
@@ -267,7 +267,7 @@
         color:black;
         line-height: 25px;
         word-wrap: wrap;
-        box-shadow: 2px 2px 20px 5px #00203FFF;
+        box-shadow: 2px 2px 20px 5px #265e3d;
         cursor: pointer;
     }
     .card-container .item:hover{
@@ -340,7 +340,7 @@
         top:-15px;
         left:60px;
         font-weight: 600;
-        color: #00203FFF;
+        color: #265e3d;
         background-color: white;
         transition: all 0.3s ease;
     }
@@ -361,7 +361,7 @@
         
         border-color: rgb(209, 181, 181);
         color: rgb(209, 181, 181);
-        background-color: #00203FFF;
+        background-color: #265e3d;
         transition: all 0.3s ease;
     }
 
@@ -414,7 +414,7 @@
     }
     .course-container .course-content p {
         font-family:Arial, Helvetica, sans-serif;
-        color: #00203FFF;
+        color: #265e3d;
     }
     .course-container .course-content h1 {
         text-align: center;
@@ -439,7 +439,7 @@
         padding: 20px;
         width: 50%;
         margin-top:0px;
-        border: 3px solid #00203FFF;
+        border: 3px solid #265e3d;
      }
      .workshop-container .workshop-content .left{
         width: 850px;
@@ -456,7 +456,7 @@
         line-height: 23px;
         letter-spacing: 1px;
         word-spacing: 3px;
-        color: #00203FFF;
+        color: #265e3d;
      }
      .workshop-container .workshop-content .right img{
         width: fit-content;
@@ -472,7 +472,7 @@
      .txt-container p {
         margin-left:30px;
         padding-top:10px;
-        color:#00203FFF;
+        color:#265e3d;
         margin-bottom:30px;
         line-height: 25px;
         z-index: 5;
@@ -481,7 +481,7 @@
      }
      .txt-container h3 {
         padding-left:30px;
-        color:#00203FFF;
+        color:#265e3d;
 
      }
      .txt-container h1{
@@ -507,7 +507,7 @@
     width: 30%;
     overflow: hidden;
     justify-content: space-between;
-    background-color:#00203FFF;
+    background-color:#265e3d;
     text-align: center;
     box-shadow: -2px 5px 20px 10px rgba(128, 128, 128, 0.884);
     border-radius: 10px;
