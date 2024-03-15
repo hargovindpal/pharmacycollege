@@ -87,9 +87,9 @@
    })
 
 
-//    script to show big image after click
+//    script to show big image after click on
 
-var imageContainer = document.querySelector('.show-big-container');
+var imageContainer = document.querySelector('.container-2');
 var bigImage = document.querySelector('.big-image');
 var smallImages = document.querySelectorAll('.image');
 

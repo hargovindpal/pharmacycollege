@@ -19,17 +19,212 @@ body{
     background-color: white;
 }
 
-::-webkit-scrollbar{
-    width: 5px;
-}
-::-webkit-scrollbar-track{
-background-color: #19e9c6;
 
-}
-::-webkit-scrollbar-thumb{
-    background:linear-gradient(to bottom, #265e3d, red);
+
+
+/* Header Top-Section css start */
+
+.head .top-nav{
+    display: flex;
+    margin: 5px;
+    padding-top:5px;
+    width: 100%;
+    height: 50px;
+    background-color: #265e3d;
+    color: white;
     border-radius: 5px;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.top-nav  a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.top-nav  a:hover i{
+    background-color: #f69024;
+}
+
+.top-nav i {
+    color: white;
+}
+
+.top-nav a:hover i.fa-facebook{
+    color:blue;
+    background-color: white;
+}
+
+.head .top-nav a:hover i.fa-instagram{
+    color:red;
+    background-color: white;
+}
+
+.head .top-nav a:hover i.fa-twitter{
+    color:green;
+    background-color: white;
+}
+
+.head .top-nav a:hover i.fa-youtube{
+    color:red;
+    background-color: white;
+}
+
+.social-icon{
+    position: absolute;
+    margin-left:650px;
+    background-color: #265e3d;
+}
+
+.enquiry-btn{
+    color: #265e3d;
+    font-weight:bolder;
+    background-color:white;
+    border-radius: 5px;
+    border:none;
+    font-size: 15px;
+    margin-bottom:5px;
+    padding:10px;
+    cursor: pointer;
+    transition:all ease 0.3s;
+}
+.enquiry-btn:hover{
+    background-color: #e69035;
+    color:white;
+    transition:all ease 0.2s;
+    }
+
+.form-container{
+    display: none;
+    position: fixed;
+    background-color: whitesmoke;
+    width: 600px;
+    padding:15px;
+    top:0;
+    left:0;
+    transform: translate(70%, 41%);
+    border-radius: 10px;
+    color:#265e3d;
+    z-index: 5;
+    flex-direction: column;
+}
+
+.cancel {
+    position: absolute;
+    right:20px;
+    top:20px;
+    color: red;
+}
+
+.cancel i {
+    color: red;
+    border-radius:50px;
+    font-size: 30px;
+}
+
+.cancel:hover i{
+    background-color: #265e3d !important;
+    color: red !important;
+}
+
+.form-container .enqry-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;   
+}
+
+.form-container .enqry-form h1{
+    margin:10px 0px;
+}
+
+.form-group
+{
+    width: 100%;
+    position: relative;
+    margin-bottom:0px;
+}
+ 
+.enqry-form .form-group input,
+.enqry-form .form-group textarea, 
+.enqry-form .form-group select,
+.enqry-form .form-group button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .enqry-form .form-group label{
+    position: absolute;
+    font-size: 13px;
+    top:-10px;
+    left:20px;
+    color: rgba(78, 74, 74, 0.856);
+    background-color: white;
+  }
+
+  .enqry-form .form-group textarea{
+    resize: none;
+    height: 60px;
+  }
+
+
+  .enqry-form button{
+    font-size: 15px;
+    height: 40px;
+    width: 520px;
+    background-color: rgb(29, 83, 138);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+
+  .enqry-form button:hover{
+    background-color:#265e3d;
+    cursor: pointer;
+  }
+
+  .enqry-form .form-group input:placeholder-shown+ label{
+    top:11px;
+    left:20px;
+    background-color: white;
+  }
+
+  .enqry-form .form-group input:focus+ label,
+  .enqry-form .form-group select:focus+ label,
+  .enqry-form .form-group textarea:focus+ label
+  {
+    top:-10px;
+    left:20px;
+    transition: all  0.3s ease;
+    color: #265e3d;
+    font-weight: 600;
+  }
+
+  .enqry-form .form-group input:focus,
+  .enqry-form .form-group select:focus,
+  .enqry-form .form-group textarea:focus
+  {
+    border-color: #265e3d;
+  }
+
+
+
+
+/* Header Bottom-sectin Nav-Bar css start*/
+
+
+
 .logo{
     position: absolute;
     
@@ -62,202 +257,7 @@ figure img{
     color:white;
 }
 
-.head .top-nav{
-    display: flex;
-    margin: 5px;
-    padding-top:5px;
-    width: 100%;
-    height: 50px;
-    background-color: #265e3d;
-    color: white;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: space-evenly;
-    
-}
-
-.top-nav  a {
-    color:white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 13px;
-}
-.top-nav  a:hover i{
-    background-color: #f69024;
-}
-.top-nav i {
-    
-    color: white;
-    
-}
-.top-nav a:hover i.fa-facebook{
-    color:blue;
-    background-color: white;
-}
-.head .top-nav a:hover i.fa-instagram{
-    color:red;
-    background-color: white;
-}
-.head .top-nav a:hover i.fa-twitter{
-    color:green;
-    background-color: white;
-}
-.head .top-nav a:hover i.fa-youtube{
-    color:red;
-    background-color: white;
-}
-.social-icon{
-    position: absolute;
-    margin-left:650px;
-    background-color: #265e3d;
-   
-
-}
-
-.enquiry-btn{
-    color: #265e3d;
-    font-weight:bolder;
-    background-color:white;
-    border-radius: 5px;
-    border:none;
-    font-size: 15px;
-    margin-bottom:5px;
-    padding:10px;
-    cursor: pointer;
-    transition:all ease 0.3s;
-}
-.enquiry-btn:hover{
-
-    background-color: #e69035;
-    color:white;
-    transition:all ease 0.2s;
-    }
-
-
-.form-container{
-    display: none;
-    position: fixed;
-    background-color: whitesmoke;
-    width: 600px;
-    padding:15px;
-    top:0;
-    left:0;
-    transform: translate(70%, 41%);
-    border-radius: 10px;
-    color:#265e3d;
-    z-index: 5;
-    flex-direction: column;
-
-}
-.cancel {
-    position: absolute;
-    right:20px;
-    top:20px;
-    color: red;
-}
-.cancel i {
-    color: red;
-    border-radius:50px;
-    font-size: 30px;
-}
-.cancel:hover i{
-    background-color: #265e3d !important;
-    color: red !important;
-}
-.form-container .enqry-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-        
-}
-.form-container .enqry-form h1{
-    margin:10px 0px;
-
-
-}
-
-.form-group
-{
-    width: 100%;
-    position: relative;
-    margin-bottom:0px;
-}
- 
-.enqry-form .form-group input,
-.enqry-form .form-group textarea, 
-.enqry-form .form-group select,
-.enqry-form .form-group button {
-   
-    padding: 10px;
-    border-radius: 5px;
-    border: 3px solid rgba(0, 0, 0, 0.2);
-    margin-bottom: 15px;
-    outline: none;
-    width: 100%;
-    height: 40px;
-    background-color: white;
-    font-size: 12px;
-    font-weight: 600;
-    
-  }
-
-  .enqry-form .form-group label{
-    position: absolute;
-    font-size: 13px;
-    top:-10px;
-    left:20px;
-    color: rgba(78, 74, 74, 0.856);
-    background-color: white;
-  }
-
-  .enqry-form .form-group textarea{
-    resize: none;
-    height: 60px;
-  }
-
-
-  .enqry-form button{
-    font-size: 15px;
-    height: 40px;
-    width: 520px;
-    background-color: rgb(29, 83, 138);
-    color: white;
-    font-weight: 600;
-    border-radius: 5px;
-  }
-  .enqry-form button:hover{
-    background-color:#265e3d;
-    cursor: pointer;
-
-  }
-
-  .enqry-form .form-group input:placeholder-shown+ label{
-    top:11px;
-    left:20px;
-    background-color: white;
-  }
-  .enqry-form .form-group input:focus+ label,
-  .enqry-form .form-group select:focus+ label,
-  .enqry-form .form-group textarea:focus+ label
-  {
-    top:-10px;
-    left:20px;
-    transition: all  0.3s ease;
-    color: #265e3d;
-    font-weight: 600;
-  }
-  .enqry-form .form-group input:focus,
-  .enqry-form .form-group select:focus,
-  .enqry-form .form-group textarea:focus
-  {
-    border-color: #265e3d;
-  }
-
-
-
-.head .nav-bar {
+  .head .nav-bar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -349,6 +349,24 @@ figure img{
     
 }
 
+
+
+/* Header Section css End */
+
+
+
+
+
+
+
+/* Index Page css Start */
+ /*         ||
+            ||
+           \  /  
+             V
+/* Main Slider css Start */
+
+
 .slick-container{
     display: flex;
     position: relative;
@@ -358,6 +376,7 @@ figure img{
     overflow: hidden;
     z-index: -1;  
 }
+
 .slick-container::after{
     content: '';
     position: absolute;
@@ -367,8 +386,8 @@ figure img{
     width: 100%;
     transition:translate(-50%, -50%);
     background:rgba(14, 14, 36, 0.651);
-
 }
+
 .slick-content{
     margin-top:0px;
     height: 500px;
@@ -376,6 +395,7 @@ figure img{
     object-fit: contain;
     object-position: center;
 }
+
 .slick-content img{
     position: relative;
     height: 500px;
@@ -384,6 +404,10 @@ figure img{
     object-position: center;
     aspect-ratio: 1/1;
 }
+/* Main Slider css End */
+
+
+
 
 .card-wrapper{
     position: absolute;
@@ -394,14 +418,13 @@ figure img{
     width:80%;
     margin-top: -145px;
     margin-left: 10%;
-
 }
+
 .card-wrapper .column {
     position: relative;
     width: 22%;
-   
-    
 }
+
 .card-wrapper .column .card{
     color: white;
     text-align: center;
@@ -410,21 +433,20 @@ figure img{
     font-size: 1.8vh;
     cursor: pointer;
 }
+
 .card-color-1{
     color: white;
     background:linear-gradient(to  right,#265e3d, #f69024);
 }
+
 .card-color-2{
     color: white;
     background-color:#f69024;
 }
+
 .card:hover{
     background:linear-gradient(to  right, #f69024, #265e3d);
 }
-
-
-
-
 
 .social-media{
     display: inline;
@@ -434,10 +456,9 @@ figure img{
     margin-top:-400px;
     margin-left:93%;
     border-radius:10px;
-  
 }
+
 .social-media .elem{
-    
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     box-shadow: 5px 5px white;
@@ -445,19 +466,19 @@ figure img{
     color:white !important;
     margin-top:10px;
     height: 40px;
-    
-
 }
+
 .social-media .elem i {
     color:white;
     transition: all ease 1s;
- 
 }
+
 .social-media .elem:hover i{
     transform:translateX(-20px);  
     background-color: white;
     transition: all ease 0.5s;
 }
+
 .social-media .elem:hover i.fa-facebook{
     color:blue;
 }
@@ -472,21 +493,8 @@ figure img{
 }
 
 
-@keyframes effect {
-    0% {
-        background: linear-gradient( to right, red, #000FFF);
-        -webkit-background-clip: text;
-    }
-
-    100% {
-        background: linear-gradient(to left, red, #000FFF);
-        -webkit-background-clip: text;
-
-    }
-}
 
 .slide-container{
-    
     width:100%;
     margin-top:50px;
     padding:10px;
@@ -497,19 +505,19 @@ figure img{
     box-shadow:  5px 5px 35px #265e3d,
              -15px -35px 35px #ffffff;
 }
+
 .slide-container h1 {
     text-align: center;
     font-weight: bolder;
     padding-top: 10px;
     color: transparent;
     animation: effect 3s linear infinite;
-   
 }
+
 .slide-container .slick-slider-2{
     margin-top:20px;
     padding-top:10px;
     margin-left:0px;
-    
     }
 
 .slide-container .slick-slider-2 img{
@@ -522,11 +530,8 @@ figure img{
     margin-right: 20px;
     aspect-ratio: 3/2;
     background: #cccaca;
-  
-  
  }
 
- 
  .testimonial-container {
     width: 93%;
     display: flex;
@@ -539,7 +544,6 @@ figure img{
 }
 
 .testimonial {
-  
     width: 25%;
     margin:10px 10px;
     text-align: center;
@@ -548,10 +552,9 @@ figure img{
     border-radius: 5px;
     box-shadow: 5px 5px 15px 5px gray;
     background-color: #265e3d;
-   
 }
-.testimonial:hover{
 
+.testimonial:hover{
  box-shadow: 10px 5px 15px 5px gray;
 }
 
@@ -566,9 +569,7 @@ figure img{
     transition: all ease 1s;
     align-items: center;
     cursor: pointer;
-
 }
-
 
 .testimonial p {
     padding:10px;
@@ -578,7 +579,6 @@ figure img{
     justify-content: justify;
     text-align: left;
     height: 200px;
-    
 }
 
 .testimonial h3 {
@@ -586,6 +586,7 @@ figure img{
     margin-bottom: 5px;
     color: #f69024;
 }
+
 #more{
     position: relative;
     margin-bottom: 30px;
@@ -601,6 +602,7 @@ figure img{
     color: white;
     font-size: 15px;
 }
+
 #more:hover{
    background-color: white;
    color: #f69024;
@@ -608,7 +610,6 @@ figure img{
 #more:hover a {
     color:#f69024;
 }
-
 
 
  .reach-wrapper{
@@ -659,7 +660,6 @@ figure img{
     width: 100%;
     height:520px;
 }
-
 
 
  .ftr-container{
@@ -737,6 +737,260 @@ footer .copyright a:hover{
     color: yellowgreen;
 
 }
+
+
+
+
+/* Vision & Mission css start*/
+
+.vision{
+    width: 93%;
+    height: 400px;
+    margin:50px;
+    box-shadow: 0 2px 10px 0 #265e3d;
+
+}
+.vision img{
+    padding:10px;
+    position: relative;
+    width: 100%;
+    object-fit: contain;
+    box-sizing: border-box;
+    z-index: -2;
+}
+.vision:hover{
+    box-shadow: 0 2px 10px red;
+}
+
+
+
+/* Vision & Mission css End*/
+
+
+
+
+
+
+/* Facility & Laboratory Page css Start*/
+
+.container-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:50px;
+    gap:20px 50px;
+    padding: 40px;
+    background-color: white;
+
+}
+.container-2 .facility{
+    height: 320px;
+    width: 30%;
+    overflow: hidden;
+    justify-content: space-between;
+    background-color:#265e3d;
+    text-align: center;
+    box-shadow: -2px 5px 20px 10px rgba(128, 128, 128, 0.884);
+    border-radius: 10px;
+    border: 1px solid  whitesmoke;
+
+}
+.container-2 .facility h3{
+    color: white;
+    font-size: 15px;
+    line-height: 40px;
+    margin-top:20px;
+    bottom: 0px;;
+    position: relative;
+
+}
+
+.container-2 .facility img{
+    aspect-ratio: 3/2;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s ease-in-out;
+
+}
+.facility:hover .image{
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+.facility .image:hover{
+    cursor: zoom-in;
+}
+
+/* Facility & Laboratory Page css Start*/
+
+
+
+
+
+/* Mandatory Disclosure page css start*/
+.mand-disc{
+    display: inline;
+    margin:50px;
+    box-shadow:0 0 15px #265e3d;
+    width: 93%;
+    justify-content: center;
+    align-items: center;
+}
+.mand-disc iframe{
+    display: flex;
+    margin:50px;
+    margin-bottom:50px;
+    width:93%;
+    height: 1200px;
+}
+
+.mand-disc h1{
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+    color: transparent;
+    animation: effect 3s linear infinite;
+}
+/* Mandatory Disclosure page css end*/
+
+
+
+/* Contact page css start */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 93%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:30px;  
+    margin-left: 50px;
+}
+.card-container .item{
+    background-color:transparent;
+    display: flex;
+    margin:20px;
+    padding:15px;
+    width:200px;
+    border-radius: 5px;
+    text-align: center;
+    flex-direction: column;
+    flex-grow:1;
+    color:black;
+    line-height: 25px;
+    word-wrap: wrap;
+    box-shadow: 2px 2px 20px 5px #265e3d;
+    cursor: pointer;
+}
+.card-container .item:hover{
+    box-shadow: 5px 5px 5px 5px gray;
+}
+.card-container .item i {
+    color: green;
+    transition:all ease 1s;
+}
+.card-container .item:hover i{
+    color:white;
+    background-color: red;
+
+}
+
+.reach-wrapper .content .form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.reach-wrapper .content .form-group .row{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.reach-wrapper .content .form-group h1{
+    margin: 20px 0px;
+}
+.form-group .row input,
+.form-group .row textarea{
+    width: 80%;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 3px solid gray;
+    margin-bottom: 5px;
+}
+
+.content .form-group .row label {
+    position: absolute;
+    top:-15px;
+    left:60px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+.content .form-group .row input:placeholder-shown+ label,
+.content .form-group .row textarea:placeholder-shown+ label
+{
+    top:15px;
+    left:60px;
+    font-weight: 100;
+    background-color: transparent;
+
+}
+
+.content .form-group .row input:focus+ label,
+.content .form-group .row textarea:focus+ label
+{
+    top:-15px;
+    left:60px;
+    font-weight: 600;
+    color: #265e3d;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+.form-group .row textarea{
+    resize: none;
+    height: 100px;
+}
+.form-group .row button{
+    width: 500px;
+    font-size: 18px;
+    font-weight: 800;
+    padding:8px 0px;
+    border-radius: 5px;
+    background-color: rgb(209, 181, 181);
+    transition: all 0.3s ease;
+}
+.form-group .row button:hover{
+    
+    border-color: rgb(209, 181, 181);
+    color: rgb(209, 181, 181);
+    background-color: #265e3d;
+    transition: all 0.3s ease;
+}
+
+/* Contact page css end */
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1024px)
 {
