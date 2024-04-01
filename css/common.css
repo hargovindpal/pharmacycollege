@@ -1,285 +1,234 @@
 
 
-    html, body {
-        overflow-x: hidden !important;
+html, body {
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+}
+
+
+.container{
+
+    padding:10px 20px;
+    margin-bottom: 100px;
+} 
+
+/* ::-webkit-scrollbar{
+width: 5px;
+}
+::-webkit-scrollbar-track{
+background-color: #19e9c6;
+
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(to bottom, #265e3d, red);
+    border-radius: 5px;
+} */
+
+
+
+
+/* h1 Tag Gradient Color CSS Start */
+
+@keyframes effect {
+    0% {
+        background: linear-gradient( to right, red, #000FFF);
+        -webkit-background-clip: text;
     }
 
-
-    .container{
-        padding:10px 20px;
-        margin-bottom: 100px;
-    } 
-
-    /* ::-webkit-scrollbar{
-    width: 5px;
+    100% {
+        background: linear-gradient(to left, red, #000FFF);
+        -webkit-background-clip: text;
     }
-    ::-webkit-scrollbar-track{
-    background-color: #19e9c6;
-
-    }
-    ::-webkit-scrollbar-thumb{
-        background:linear-gradient(to bottom, #265e3d, red);
-        border-radius: 5px;
-    } */
+}
+/* h1 Tag Gradient Color CSS End */
 
 
+i {
+    color: white;
+    font-weight:bolder;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-left: 5px;
+    padding:9px;
+    margin-right:5px;
+    transition:all ease 0.5s;
+}
+.fa-instagram{
+    color: red;
+    font-weight: bolder;
+
+}
+.fa-twitter{
+    color:rgb(8, 185, 23);
+}
+.fa-facebook{
+    color:rgb(8, 126, 223);
+}
+i:hover{
+    background-color: #ed3238;
+    transition:all ease 0.2s;
+    cursor: pointer;
+    color:white
+}
 
 
-    /* h1 Tag Gradient Color CSS Start */
-
-    @keyframes effect {
-        0% {
-            background: linear-gradient( to right, red, #000FFF);
-            -webkit-background-clip: text;
-        }
+.text-container-2 {
+    position: relative;
+    display: flex;
+    top:10px;
+    margin-left:0px;
+    width:100%;
+    background-color:whitesmoke;
+    object-fit: contain;
+    justify-content: center;
     
-        100% {
-            background: linear-gradient(to left, red, #000FFF);
-            -webkit-background-clip: text;
-        }
-    }
-    /* h1 Tag Gradient Color CSS End */
+}
 
-
-    i {
-        color: white;
-        font-weight:bolder;
-        border-radius: 40px;
-        font-size: 20px;
-        margin-left: 5px;
-        padding:9px;
-        margin-right:5px;
-        transition:all ease 0.5s;
-    }
-    .fa-instagram{
-        color: red;
-        font-weight: bolder;
-
-    }
-    .fa-twitter{
-        color:rgb(8, 185, 23);
-    }
-    .fa-facebook{
-        color:rgb(8, 126, 223);
-    }
-    i:hover{
-        background-color: #ed3238;
-        transition:all ease 0.2s;
-        cursor: pointer;
-        color:white
-    }
-
-
-    .text-container {
-        margin-top:50px;
-        margin-left:50px;
-        display: flex;
-        width:93%;
-        background-color:whitesmoke;
-        border: none;
-        box-shadow: 2px 10px 10px 5px #265e3d;
-        flex-wrap: wrap;
-        padding:20px;
-       
-    }
-    .text-container h2{
-        margin:20px;
-        color:#d37108;
-    }
-
-    .text-container .content{
-        display: inline;
-        width:50%;
-    }
-    .text-container .content p {
-        padding:10px;
-        font-size:15px;
-        font-weight:lighter;
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 20px;
-        text-align: justify;
-        position: relative;
-
-    }
-
-    .text-container .content img{
-        margin-left:150px;
-        margin-top:0px;
-        box-shadow: 0 4px 8px 0 #265e3d;
-        max-width: 300px;
-        width: 100%;
-        height: auto;
-        
-        }
-
-    .text-container .content img:hover{
-        box-shadow: 0 4px 8px 0 red;
-        }
-
-    .text-container .content .name{
-        margin-top:30px;
-        color: green;
-        text-align: center;
-    }
-    .text-container .content .name h3{
-        margin-top:2px;
-        margin-left:10px;
-        color: black;
-    }
-    
-    .text-container-2 {
-        display: flex;
-        margin-top:10px;
-        margin-left:50px;
-        width:93%;
-        background-color:whitesmoke;
-        object-fit: contain;
-        object-position: center;
-        align-items: center;
-        justify-content: center;
-        
-    }
-
-    .text-container-2 .content{
-        display: inline;
-        flex-wrap: wrap;
-        padding:15px;
-        width:50%;
-        object-fit: contain;
-        object-position: center;
-    }
-    .text-container-2 .content p {
-        padding:10px 50px;
-        font-size:15px;
-        font-weight:lighter;
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 20px;
-        text-align: justify;
-    }
-    .text-container-2 .content img{
-    margin-top:0px;
-    max-width: 800px;
-    width: 85%;
-    height: auto;
+.text-container-2 .content{
+    flex-wrap: wrap;
+    padding:50px;
+    width:50%;
+    object-fit: contain;
+    object-position: center;
+}
+.text-container-2 .content p {
+    padding:10px 10px;
+    font-size:15px;
+    font-weight:lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    text-align: justify;
+}
+.text-container-2 .content img{
+    margin-left:100px;
     box-shadow: 0 4px 8px 0 #265e3d;
-    }
-    .text-container-2 .content img:hover{
-    box-shadow: 0 4px 8px 0 red;
-    }
+    height: 300px;
+}
+
+.text-container-2 .content .name{
+    margin-top:30px;
+    color: #e69035;
+    text-align: center;
+}
+.text-container-2 .content h2{
+    margin-left:10px;
+    color: #e69035;
+}
+.text-container-2 .content img:hover{
+box-shadow: 0 4px 8px 0 red;
+}
 
 
-     .course-container .course-bg{
-        position: relative;
-        display: flex;
-        background-image: url(../images/cover_photo.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-left: 50px;
-        height: 55vh;
-        width: 94%;
-        z-index: -1;
+ .course-container .course-bg{
+    position: relative;
+    display: flex;
+    background-image: url(../images/cover_photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    width: 100%;
+    z-index: -1;
 
-    }
+}
 
-    .course-container .course-bg::after {
-        content: "";
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background:rgba(23, 59, 114, 0.993);
-        position:absolute;
-        opacity: 0.6;
-    }
-     .text-content{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 30px;
-        filter: brightness(150%);
-        z-index: 1;
-    }
-    .course-container .course-content{
-        margin-left: 50px;
-        padding:50px;
-        font-size: 20px;
+.course-container .course-bg::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(23, 59, 114, 0.993);
+    position:absolute;
+    opacity: 0.6;
+}
+ .text-content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    filter: brightness(150%);
+    z-index: 1;
+}
+.course-container .course-content{
+  
 
-    }
-    .course-container .course-content p {
-        font-family:Arial, Helvetica, sans-serif;
-        color: #265e3d;
-    }
-    .course-container .course-content h1 {
-        text-align: center;
-        font-weight: bolder;
-        margin-top: 10px;
-        color: transparent;
-        animation:effect 3s linear infinite;
-    }
-   
-     .txt-container{
-        width: 91.5%;
-        margin-left: 50px;
-        padding:20px;
-        height: auto;
-        background:linear-gradient( to right, #E8E8E8, rgba(255, 255, 255, 0.89), rgba(0, 31, 63, 0.377));
-     }
-     .txt-container p {
-        margin-left:30px;
-        padding-top:10px;
-        color:#265e3d;
-        margin-bottom:30px;
-        line-height: 25px;
-        z-index: 5;
+    font-size: 20px;
 
+}
+.course-container .course-content p {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #265e3d;
+}
+.course-container .course-content h1 {
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 10px;
+    color: transparent;
+    animation:effect 3s linear infinite;
+}
 
-     }
-     .txt-container h3 {
-        padding-left:30px;
-        color:#265e3d;
+.text-container-3{
+    width:100%;
+    padding:20px;
+    margin-top:130px;
+    background:linear-gradient( to right, #E8E8E8, rgba(255, 255, 255, 0.89), rgba(0, 31, 63, 0.377));
+ }
+.text-container-3 p {
+    margin-left: 30px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: black;
+    margin-bottom: 30px;
+    line-height: 25px;
+    z-index: 5;
+}
+ .text-container-3 h3 {
+    padding-left:30px;
+    color:#265e3d;
 
-     }
-     .txt-container h1{
-        text-align: center;
-        font-weight: bolder;
-        padding: 20px;
-        color: transparent;
-        animation:effect 3s linear infinite;
-    }
+ }
+.text-container-3 h1{
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+    color: transparent;
+    animation:effect 3s linear infinite;
+}
 
-    .show-big-container{
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        top:0%;
-        left:0%;
-        align-items: center;
-        justify-content: center;
-        content: '';
-        display: none;
-        overflow: hidden;
-        z-index: 5;
+.show-big-container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    top:0%;
+    left:0%;
+    align-items: center;
+    justify-content: center;
+    content: '';
+    display: none;
+    overflow: hidden;
+    z-index: 5;
 
-    }
+}
 
-    .show-big-container .big-image {
-        display: flex;
-        width: 80%;
-        max-height: 80vh;
-        cursor: zoom-out;
-        border: 3px solid salmon;
-    }
+.show-big-container .big-image {
+    display: flex;
+    width: 80%;
+    max-height: 80vh;
+    cursor: zoom-out;
+    border: 3px solid salmon;
+}
 
-    .show-big-container:hover .big-image{
-        transform: scale(1.2);
-        transition: all 2s ease-in;
-    }
+.show-big-container:hover .big-image{
+    transform: scale(1.2);
+    transition: all 2s ease-in;
+}
 
 
 

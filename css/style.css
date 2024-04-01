@@ -11,7 +11,7 @@
 
 body{
 
-   background-color: #d8dad998;
+   background-color: white;
 }
 
 *::selection{
@@ -24,18 +24,20 @@ body{
 
 /* Header Top-Section css start */
 
-.head .top-nav{
-    display: flex;
-    margin: 5px;
-    padding-top:5px;
+.head {
     width: 100%;
-    height: 50px;
     background-color: #265e3d;
-    color: white;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: space-evenly;
+    height:55px;
 }
+
+    .head .top-nav {
+        display: flex;
+        width: 100%;
+        background-color: #265e3d;
+        color: white;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 
 .top-nav  a {
     color:white;
@@ -225,46 +227,47 @@ body{
 
 
 
-.logo{
+
+
+.logo {
     position: absolute;
-    
-    margin-top: 65px;
+    margin-top: 60px;
     overflow: hidden;
-    
 }
 
 figure img{
     width:380px;
     height: auto;
-    padding:5px;
+    padding:0px;
     background-size: cover;
 }
 
-.toggle-btn{
+.toggle-section {
     display: flex;
     position: absolute;
-    visibility:hidden; 
-    background-color: #265e3d ;
+    visibility: hidden;
+    background-color: #265e3d;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    margin:0px;
+    padding:0;
     width: 100%;
     height: 40px;
-    padding:10px;
     z-index: 5;
-   
 }
 #toggle {
     color:white;
+    font-size:30px;
 }
 
   .head .nav-bar {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 400px;
+    margin-left: 390px;
     margin-top: 20px;
+    margin-bottom:10px;
     width: auto;
-    height: 50px;
     z-index: 1;
 }
 
@@ -278,7 +281,7 @@ figure img{
 
 .head .nav-bar ul li {
     list-style: none;
-    padding: 10px 8px;
+    padding: 10px 6px;
     opacity: 1;
     text-align: left;
     position: relative;
@@ -338,7 +341,7 @@ figure img{
 .whatsapp{
     position: fixed;
     right:5px;
-    margin-top:62px;
+    margin-top:30px;
     height: 50px;
     width: 50px;
     z-index: 5;
@@ -346,9 +349,13 @@ figure img{
 .whatsapp img{
     height: 50px;
     width: 50px;
+    transition:all 0.2s ease;
     
 }
-
+    .whatsapp img:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(0px 0px 5px red);
+    }
 
 
 /* Header Section css End */
@@ -368,11 +375,12 @@ figure img{
 
 
 .slick-container{
+    scroll-behavior:smooth;
     display: flex;
     position: relative;
-    margin-left:50px;
+    top:10px !important;
     height: 500px;
-    width: 93%;
+    width: 100%;
     overflow: hidden;
     z-index: -1;  
 }
@@ -415,9 +423,9 @@ figure img{
     flex-wrap: nowrap;
     overflow: hidden;
     justify-content: space-around;
-    width:80%;
+    width:100%;
     margin-top: -145px;
-    margin-left: 10%;
+    
 }
 
 .card-wrapper .column {
@@ -454,7 +462,7 @@ figure img{
     position: absolute;
     color: white;
     margin-top:-400px;
-    margin-left:93%;
+    right:0px;
     border-radius:10px;
 }
 
@@ -498,8 +506,6 @@ figure img{
     width:100%;
     margin-top:50px;
     padding:10px;
-    margin-left:50px;
-    width:93%;
     object-fit: contain;
     overflow:hidden;
     box-shadow:  5px 5px 35px #265e3d,
@@ -518,6 +524,8 @@ figure img{
     margin-top:20px;
     padding-top:10px;
     margin-left:0px;
+   
+
     }
 
 .slide-container .slick-slider-2 img{
@@ -526,17 +534,17 @@ figure img{
     object-fit: contain;
     box-sizing: border-box;
     height: 300px; 
-    width:400px;
+    width:450px;
     margin-right: 20px;
     aspect-ratio: 3/2;
     background: #cccaca;
  }
 
  .testimonial-container {
-    width: 93%;
+    width: 100%;
     display: flex;
     margin-top:30px;
-    margin-left: 50px;
+   
     margin-bottom: 30px;
     padding: 10px;
     background-color: #fff;
@@ -613,11 +621,11 @@ figure img{
 
 
  .reach-wrapper{
-    width:94%;
+    width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left:50px;
+   
     margin-top:20px;
     padding:5px;
     background-color:#265e3d;
@@ -664,9 +672,8 @@ figure img{
 
  .ftr-container{
     position: relative;
-    margin-left:50px;
     margin-top:10px;
-    width:94%;
+    width:100%;
     background-color:#265e3d;
     border:3px solid white;
     display:flex;
@@ -677,7 +684,6 @@ figure img{
 }
 footer .ftr-container .ftr-content{
     width:35%;
-    
     margin:20px;
     
 }
@@ -711,11 +717,9 @@ footer .ftr-container .ftr-content p{
     cursor: pointer;
 }
 footer .copyright{
-   
-    margin-left:50px;
     margin-top:0px;
     height: 40px;
-    width:94%;
+    width:100%;
     background-color:#265e3d;
     border:3px solid white;
     display:flex;
@@ -830,12 +834,13 @@ footer .copyright a:hover{
 
 /* Mandatory Disclosure page css start*/
 .mand-disc{
-    display: inline;
-    margin:50px;
-    box-shadow:0 0 15px #265e3d;
-    width: 93%;
+    display: flex;
+    margin-top:130px;
+    box-shadow:0 0 15px gray;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    flex-direction:column;
 }
 .mand-disc iframe{
     display: flex;
@@ -929,9 +934,9 @@ footer .copyright a:hover{
 .content .form-group .row label {
     position: absolute;
     top:-15px;
-    left:60px;
+    left:70px;
     padding: 0px 5px;
-    border-radius: 5px;
+    border-radius: 1px;
     color: gray;
     display: flex;
     justify-content: center;
@@ -943,7 +948,7 @@ footer .copyright a:hover{
 .content .form-group .row textarea:placeholder-shown+ label
 {
     top:15px;
-    left:60px;
+    left:70px;
     font-weight: 100;
     background-color: transparent;
 
@@ -953,7 +958,7 @@ footer .copyright a:hover{
 .content .form-group .row textarea:focus+ label
 {
     top:-15px;
-    left:60px;
+    left:67px;
     font-weight: 600;
     color: #265e3d;
     background-color: white;
@@ -1034,18 +1039,25 @@ footer .copyright a:hover{
 }
 @media screen and (max-width:767px) {
 
-    
-    
+
+
+    .head {
+        visibility:collapse;
+    }
+    .container {
+    padding:0px !important;
+    }
     .top-nav,  .nav-bar{
         visibility: hidden;
 
     }
 
     .logo{
-        margin-top: 60px;
+        visibility:visible;
+        margin-top: 45px;
         padding: 0 !important;
         height: auto;
-        width: 70% !important;
+        width: 80% !important;
         overflow-x: hidden !important;
 
     }
@@ -1056,26 +1068,12 @@ footer .copyright a:hover{
         padding-left: 0px !important;
     }
 
-    .toggle-btn{  
-        visibility:visible;
+    .toggle-section {
+        visibility: visible;
         width: 100% !important;
-        overflow-x:hidden;
-        
+        overflow-x: hidden;
     }
-    .card-container {
-       
-        margin-left: 10px !important;
-    }
-    .card-container .item{ 
-        flex-grow:0; 
-    }
-    .card-container .item P{
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        text-wrap: wrap !important;
-        font-size: 12px;
-    }
+   
 
 
     .form-container{
@@ -1131,7 +1129,7 @@ footer .copyright a:hover{
             flex-direction: column !important;
             align-items: center;
             background-color: #265e3d;
-            margin-top:40px;
+            margin-top:28px;
             margin-bottom: 0px;
         }
         .head .nav-bar ul li a {
@@ -1139,11 +1137,12 @@ footer .copyright a:hover{
         }
 
         .whatsapp{
+            visibility:visible;
             display: flex;
             position: absolute;
             right:10px;
             top:10px;
-            transform: translate(10%, 0%);
+            
             
         }
         
@@ -1154,6 +1153,7 @@ footer .copyright a:hover{
     .container{
         margin-bottom:0px !important;
     }
+
     .slick-container{
         display: flex;
         width: 100%;
@@ -1168,6 +1168,108 @@ footer .copyright a:hover{
         padding:10px;
         font-size: 30px;
     }
+
+
+
+    .card-container {
+        margin-left: 10px !important;
+    }
+
+        .card-container .item {
+            flex-grow: 0;
+        }
+
+            .card-container .item P {
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                text-wrap: wrap !important;
+                font-size: 12px;
+            }
+
+    .slide-container {
+        width: 100%;
+        height: 180px;
+        margin-left: 0;
+        box-shadow:none !important;
+    }
+
+    .slide-container {
+        margin: 0px;
+    }
+
+        .slide-container .slick-slider-2 {
+            object-fit: contain;
+        }
+
+            .slide-container .slick-slider-2 img {
+                margin-right: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+        .slide-container h1 {
+            font-size: 20px;
+        }
+
+
+    .testimonial-container {
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 30px !important;
+        padding: 0px;
+        box-shadow:none;
+    }
+
+    .testimonial-container .testimonial {
+        width: 93%;
+        padding: 0px !important;
+    }
+    .testimonial p {
+        font-size:15px;
+    }
+
+    .reach-wrapper {
+        flex-direction: column;
+        font-size: 3px !important;
+        flex-wrap: wrap;
+        margin-left: 10px !important;
+        width: 100%;
+    }
+
+        .reach-wrapper img {
+            height: 50px;
+        }
+
+        .reach-wrapper .content {
+            width: 100% !important;
+            padding: 0px !important;
+        }
+
+            .reach-wrapper .content h1 {
+                font-size: 18px;
+            }
+
+        .reach-wrapper p {
+            padding: 5px !important;
+            font-size:15px;
+        }
+
+    .content h1 {
+        margin-left: 0px;
+        margin-top: 10px;
+        color: #f69024;
+    }
+
+    .content .google-map {
+        width: 97%;
+    }
+  
+
+
+     /*contact page css Start*/
 
     .card-wrapper{
        width: 100%;
@@ -1185,88 +1287,16 @@ footer .copyright a:hover{
         padding:5px;
         
     }
-    .slide-container {
-        width: 100%;
-        height: 180px;
-        margin-left: 0;
-        
-    }
-    .slide-container {
-    margin:0px;
+
+    /*contact page css End*/
+
+
+    /*Footer css Start*/
    
-
-    }
-    
-    .slide-container .slick-slider-2{
-        object-fit: contain;
-        
-        
-    }
-    
-    .slide-container .slick-slider-2 img {
-        margin-right: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-    .slide-container h1{
-        font-size: 20px;
-    }
-
-
-    .testimonial-container{
-        width: 100%;
-        flex-direction: column;
-        margin-left:0px;
-        margin-top:30px !important;
-        padding:0px;
-    }
-
-    .testimonial-container .testimonial{
-        width: 93%;
-        padding:0px !important;
-    }
-    
-    .reach-wrapper{
-        flex-direction: column;
-        font-size: 3px !important;
-        flex-wrap: wrap;
-        margin-left:10px !important;
-        width: 100%;
-    }
-    .reach-wrapper img{
-        height: 50px;
-    }
-    .reach-wrapper .content{
-        width: 100% !important;
-        padding:0px !important;
-
-    }
-    .reach-wrapper .content h1{
-        font-size:18px;
-
-    }
-
-    .reach-wrapper p {
-        padding: 5px !important;
-        
-    }
-
-    .content h1{
-    margin-left:0px;
-    margin-top:10px;
-    color: #f69024;
-
-    }
-    .content .google-map{
-        width: 97%;
-    }
-  
     .ftr-container{
         flex-direction: column;
         font-size: 6px !important;
         height: auto !important;
-        margin-left: 10px;
         width: 100%;
     }
     .ftr-container .ftr-content{
@@ -1278,7 +1308,7 @@ footer .copyright a:hover{
        
     }
     .ftr-container .ftr-content ul p{
-        font-size: 12px;
+        font-size: 15px;
     }
     .ftr-container .ftr-content h2{
         font-size: 15px;
@@ -1295,14 +1325,16 @@ footer .copyright a:hover{
         padding:2px;
     }
     footer .copyright{
-        margin-left: 10px;
         padding:5px;
         height: auto;
         flex-wrap: wrap;
         width: 100%;
-        font-size: 12px;
+        font-size: 15px;
     }
-    .txt-container{
+
+    /*Footer css End*/
+
+  /*  .txt-container{
         width: 100%;
         margin-top:30px !important;
         margin-left:20px !important;
@@ -1314,7 +1346,7 @@ footer .copyright a:hover{
         padding:10px !important;
         text-wrap: wrap;
         gap: 20px;
-    }
+    }*/
 
     /* text-containers responsive */
     .text-container-2{
@@ -1322,42 +1354,82 @@ footer .copyright a:hover{
         margin:0;
         box-shadow:none !important;
     }
-    .text-container{
-        margin-top:50px;
-        display: inline !important;
-        margin:0;
+
+    .text-container-3 {
+        margin-top: 60px !important;
+        margin-left:0px;
+        margin-bottom:0px !important;
+        padding:0px !important;
         box-shadow: none !important;
-    }
-    .text-container h2{
-        font-size: 20px;
 
     }
-    .text-container .content p{
-        padding:10px 20px !important;
+        .text-container-3 p {
+            margin-left:0px !important;
+            padding:10px;
+            font-size:15px;
+        }
+        .text-container-3 h1 {
+            font-size:25px;
+        }
+        .text-container-3 h3 {
+            padding: 5px !important;
+            font-size: 18px;
+            justify-content: center;
+            align-self: center;
+        }
+    .text-container {
+        width: 100%;
+        margin-top: 60px !important;
+        margin-left: 0px;
     }
+
+        .text-container .content {
+            display: inline;
+            width: 100% !important;
+            margin: 0px !important;
+        }
+   
+            .text-container h2 {
+                padding: 0px !important;
+                font-size: 18px;
+            }
+        
+
+        .text-container .content p {
+            width: 100% !important;
+            padding:0px;
+        }
     .text-container .content img{
 
-        margin-left:7px !important;
+        margin:0px;
+        padding:0px;
     }
-    
+  
     /* mandatory-closure responsive */
     .mand-disc{
-        margin:0;
+       
+        
+        margin-top:60px;
+        flex-direction:column;
+        box-shadow:none;
 
     }
     .mand-disc h1{
-       font-size: 15px;
+        padding:5px;
+       font-size: 18px;
     }
     .mand-disc iframe{
-        margin:10px !important;
+        padding:0px !important;
+        margin:0px !important;
         height: 360px !important;
     }
     .course-container{
         width: 100% !important;
         margin-left:0px;
+        margin-top:50px;
     }
     .course-container .course-bg{
-        margin: 0px 10px !important;  
+        margin: 0px 0px !important;  
 
     }
     .course-container .course-content{
@@ -1369,6 +1441,9 @@ footer .copyright a:hover{
     }
     .course-container .course-content h1{
         font-size: 20px;
+    }
+    .course-content p {
+        padding:10px;
     }
         .facility-container{
         display: inline !important;

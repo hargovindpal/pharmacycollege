@@ -2,7 +2,7 @@
     
     var enqry = document.querySelector('.enquiry-btn')
     var cancel = document.querySelector('.fa-xmark')
-    var toggle =  document.querySelector('.toggle-btn')
+    
     var showform = document.querySelector('.form-container')
     var nav_item = document.querySelector('.nav-bar')
     var slickContainer = document.querySelector('.slick-container')
@@ -70,18 +70,17 @@
     } ) 
 
     //toggle button control script
-
+    var toggle = document.querySelector('.toggle-section');
     let i=1;
-    nav_item.style.position = 'absolute'
     toggle.addEventListener('click',()=>{
     if(i <= 1){
-    nav_item.style.visibility = 'visible';
-    nav_item.style.position = 'relative';
-    slickContainer.style.marginTop = '0px';
-    i++;
+        document.querySelector('.nav-bar').style.visibility = 'visible';
+        document.querySelector('.nav-bar').style.position = 'relative';
+        /*slickContainer.style.marginTop = '0px';*/
+        i++;
     }else{
-        nav_item.style.visibility = 'hidden';
-        nav_item.style.position = 'absolute';
+        document.querySelector('.nav-bar').style.visibility = 'visible';
+        document.querySelector('.nav-bar').style.position = 'absolute';
         i--;
     }
    })
