@@ -21,7 +21,8 @@ background-color: #19e9c6;
 } */
 
     #scrollbtn {
-        display: block;
+
+        display: none;
         position: fixed;
         right: 5px;
         bottom: 20px;
