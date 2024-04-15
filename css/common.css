@@ -161,7 +161,7 @@ box-shadow: 0 4px 8px 0 red;
     width:100%;
     padding:20px;
     margin-top:110px;
-    background:linear-gradient( to right, #E8E8E8, rgba(255, 255, 255, 0.89), rgba(0, 31, 63, 0.377));
+    background:white;
  }
 .text-container-3 p {
     margin-left: 30px;
