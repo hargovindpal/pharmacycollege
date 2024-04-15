@@ -88,21 +88,45 @@
 
 //    script to show big image after click on
 
-var imageContainer = document.querySelector('.container-2');
-var bigImage = document.querySelector('.big-image');
-var smallImages = document.querySelectorAll('.image');
+// var imageContainer = document.querySelector('.container-2');
+// var bigImage = document.querySelector('.big-image');
+// var smallImages = document.querySelectorAll('.image');
 
-smallImages.forEach(function(smallImage) 
-{
-smallImage.addEventListener('click',()=>{
-bigImage.src = smallImage.src;
-imageContainer.style.display = 'flex';
-document.body.style.overflow = 'hidden';
-});
-});
+// smallImages.forEach(function(smallImage) 
+// {
+// smallImage.addEventListener('click',()=>{
+// bigImage.src = smallImage.src;
+// imageContainer.style.display = 'flex';
+// document.body.style.overflow = 'hidden';
+// });
+// });
 
-bigImage.addEventListener('click',()=>{
-    imageContainer.style.display = 'none';
-    document.body.style.overflow = 'auto';
-});
+//bigImage.addEventListener('click',()=>{
+//    imageContainer.style.display = 'none';
+//    document.body.style.overflow = 'auto';
+// });
     
+
+
+
+// Scroll to Top Arrow Function 
+
+let scrollbutton = document.getElementById("scrollbtn");
+
+window.onscroll = function(){scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollbutton.style.display = "block";
+  } else {
+    scrollbutton.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+

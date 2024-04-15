@@ -519,7 +519,7 @@ figure img{
 .slide-container{
     width:100%;
     margin-top:30px;
-    padding:10px;
+    padding:5px;
     object-fit: contain;
     overflow:hidden;
 
@@ -536,19 +536,17 @@ figure img{
 .slide-container .slick-slider-2{
     margin-top:20px;
     padding-top:10px;
-    margin-left:0px;
    
 
     }
 
 .slide-container .slick-slider-2 img{
-    padding:10px 0px 10px 5px;  
+    padding:0px 5px 0px 5px;  
     border: 20px solid inset;
     object-fit: contain;
     box-sizing: border-box;
     height: 300px; 
     width:450px;
-    margin-right: 20px;
     aspect-ratio: 3/2;
     background: #cccaca;
  }
@@ -785,7 +783,7 @@ footer .copyright a:hover{
 
 
 
-/* Facility & Laboratory Page css Start*/
+/* images & Laboratory Page css Start*/
 
 .inside-container{
     display: flex;
@@ -798,8 +796,8 @@ footer .copyright a:hover{
     background-color: white;
 
 }
-.inside-container .facility{
-    height: 320px;
+.inside-container .images{
+   
     width: 30%;
     overflow: hidden;
     justify-content: space-between;
@@ -810,17 +808,19 @@ footer .copyright a:hover{
     border: 1px solid  whitesmoke;
 
 }
-.inside-container .facility h3{
+.inside-container .images h3{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
     color: white;
     font-size: 15px;
     line-height: 40px;
-    margin-top:20px;
-    bottom: 0px;;
+    margin-top:0px;
+    bottom: 0px;
     position: relative;
 
 }
 
-.inside-container .facility img{
+.inside-container .images img{
     aspect-ratio: 3/2;
     width: 100%;
     object-fit: cover;
@@ -828,15 +828,31 @@ footer .copyright a:hover{
     transition: all 0.5s ease-in-out;
 
 }
-.facility:hover .image{
-    transform: scale(1.2);
+.images:hover{
+    
     transition: all 0.5s ease-in-out;
+  
 }
-.facility .image:hover{
-    cursor: zoom-in;
+.images .image:hover{
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1) !important;
+
 }
 
-/* Facility & Laboratory Page css Start*/
+.gallery img:hover{
+    cursor: zoom-in !important;
+    transform: scale(1.2) !important;
+}
+
+
+
+
+
+
+/* images & Laboratory Page css End*/
+
+
 
 
 
@@ -1457,7 +1473,7 @@ footer .copyright a:hover{
     .course-content p {
         padding:10px;
     }
-        .facility-container{
+        .images-container{
         display: inline !important;
         width: 100%;
         margin-top:20px !important;
@@ -1466,14 +1482,14 @@ footer .copyright a:hover{
        
     
     }
-    .facility-container .facility{
+    .images-container .images{
         width: 95% !important;
         overflow: hidden;
         margin:20px 10px !important;
         box-shadow: none !important;
     
     }
-    .facility-container .facility h3{
+    .images-container .images h3{
         font-size: 12px !important;
      
     }
