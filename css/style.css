@@ -264,6 +264,15 @@ figure img{
     color:white;
     font-size:30px;
 }
+.head .nav-bar i{
+color: #e69035;
+font-size: 25px;
+
+}
+.head .nav-bar i:hover{
+    background-color: #265e3d;
+    color: white;
+}
 
   .head .nav-bar {
     display: flex;
