@@ -19,36 +19,31 @@
 .slick-prev,
 .slick-next
 {
-    font-size: 0;
-    line-height: 0;
-
+    font-size: 25px;
+    font-weight: 800;
     position: absolute;
-    top: 50%;
-
+    top: 40%;
+    left: 94.5%;
     display: block;
-
-    width: 20px;
-    height: 20px;
+    color: white;
+    width: auto;
+    height: auto;
     padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-
     cursor: pointer;
-
-    color: transparent;
     border: none;
-    outline: none;
-    background: transparent;
+    background-color: #f69024;
+    z-index: 999 !important;
 }
+
+
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    color: #265e3d;
     outline: none;
-    background: transparent;
+    background: white;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -60,58 +55,47 @@
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
 {
-    opacity: .25;
+    opacity: 1;
 }
 
-.slick-prev:before,
-.slick-next:before
-{
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
 
-    opacity: .75;
-    color: white;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
 .slick-prev
 {
-    left: -25px;
+    left: 5px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 5px;
     left: auto;
 }
-.slick-prev:before
+
+
+button.slick-next
 {
-    content: '←';
+    width: 70px;
+    height: auto;
+    padding:5px;
+    background-color: #f69024;
+    right: 5px;
+
 }
-[dir='rtl'] .slick-prev:before
+button.slick-prev
 {
-    content: '→';
+    width: 70px;
+    height: auto;
+    padding:5px;
+    background-color: #f69024;
+    left: 5px;
+
 }
 
-.slick-next
-{
-    right: -25px;
-}
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 5px;
 }
-.slick-next:before
-{
-    content: '→';
-}
-[dir='rtl'] .slick-next:before
-{
-    content: '←';
-}
+
 
 /* Dots */
 .slick-dotted.slick-slider
@@ -194,6 +178,7 @@
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: black;
+    opacity: 1;
+    background-color: #265e3d;
+    border-radius: 50px;
 }
