@@ -116,14 +116,13 @@ i:hover{
 .container-2 .content img{
     margin-left:0px;
     box-shadow: 0 4px 8px 0 #265e3d;
-    height: 350px;
     max-width: 100%;
     width: 100%;
 }
 
 .container-2 .content .name{
-    margin-top:30px;
-    color: #e69035;
+    margin-top:10px;
+    color: #265e3d;
     text-align: center;
 }
 .container-2 .content h2{
@@ -131,7 +130,7 @@ i:hover{
     color: #e69035;
 }
 .container-2 .content img:hover{
-box-shadow: 0 4px 8px 0 red;
+box-shadow: 0 4px 8px 0 #e69035;
 }
 
 
