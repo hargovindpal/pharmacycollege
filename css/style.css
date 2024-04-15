@@ -45,7 +45,7 @@ body{
     color:white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .top-nav  a:hover i{
@@ -54,6 +54,7 @@ body{
 
 .top-nav i {
     color: white;
+    font-size: 20px;
 }
 
 .top-nav a:hover i.fa-facebook{
@@ -64,6 +65,7 @@ body{
 .head .top-nav a:hover i.fa-instagram{
     color:red;
     background-color: white;
+    
 }
 
 .head .top-nav a:hover i.fa-twitter{
@@ -498,6 +500,9 @@ font-size: 25px;
     margin-top:10px;
     height: 40px;
 }
+.social-media .elem:hover{
+    background-color: #e69035;
+}
 
 .social-media .elem i {
     color:white;
@@ -724,13 +729,16 @@ footer .ftr-container .ftr-content p{
 .ftr-content .elem {
     display: flex;
     justify-content: center;
+    
   
 }
 .ftr-content .elem i{
-    font-size: 30px; 
+    font-size: 20px; 
+    background-color: white;
 }
 .ftr-content .elem i:hover{
     cursor:pointer;
+    background-color: #e69035; 
    
 }
 .ftr-container .ftr-content :hover p{
