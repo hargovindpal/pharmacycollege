@@ -153,7 +153,9 @@ box-shadow: 0 4px 8px 0 #e69035;
     animation:effect 3s linear infinite;
 }
 
-
+.space{
+    margin-top: -120px !important;
+}
 
 
 .text-container-3{
