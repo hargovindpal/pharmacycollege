@@ -110,7 +110,7 @@ body{
     padding:15px;
     top:0;
     left:0;
-    transform: translate(70%, 41%);
+    transform: translate(70%, 25%);
     border-radius: 10px;
     color:#265e3d;
     z-index: 5;
@@ -280,7 +280,7 @@ font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 390px;
+    margin-left: 300px;
     margin-top: 20px;
     margin-bottom:10px;
     width: auto;
