@@ -1117,6 +1117,10 @@ footer .copyright a:hover {
 
 @media screen and (max-width:767px) {
 
+    #scrollbtn{
+        right:20px;
+        overflow-x: hidden;
+    }
     #scrollbtn i {
         background-color: white;
         color: #e69035;
