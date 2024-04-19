@@ -1118,14 +1118,9 @@ footer .copyright a:hover {
 @media screen and (max-width:767px) {
 
     #scrollbtn{
-        right:50px !important;
-        overflow-x: hidden !important;
+        display: none !important;
     }
-    #scrollbtn i {
-        background-color: white;
-        color: #e69035;
-        font-size: 20px !important;
-    }
+    
 
     .head {
         visibility: collapse;
