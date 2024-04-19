@@ -1115,12 +1115,26 @@ footer .copyright a:hover {
 
 }
 
+
 @media screen and (max-width:767px) {
 
     #scrollbtn{
         display: none !important;
     }
     
+    .space{
+        position: none !important;
+        margin-top:100px !important;
+        display: inline !important;
+        padding:20px !important;
+    }
+    .space .heading{
+        padding:10px !important;
+    }
+    .space .heading h1{
+        margin-top:60px;
+        font-size: 20px !important;
+    }
 
     .head {
         visibility: collapse;

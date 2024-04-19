@@ -42,6 +42,10 @@ background-color: #19e9c6;
     background-color: none !important;
 }
 
+.space{
+    margin-top:110px;
+}
+
 /* h1 Tag Gradient Color CSS Start */
 
 @keyframes effect {
