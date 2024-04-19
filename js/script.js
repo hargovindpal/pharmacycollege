@@ -10,6 +10,7 @@
 
 
     window.onload = function() {
+        
         // Get the current page path
         var currentPage = window.location.pathname;
     
