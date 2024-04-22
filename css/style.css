@@ -1135,7 +1135,17 @@ footer .copyright a:hover {
         margin-top:60px;
         font-size: 20px !important;
     }
+    .space-2{
+        
+        top:100px !important;
+        display: inline !important;
+        padding:20px !important;
+    }
+    .space-2 p{
+        padding:10px !important;
+    }
 
+    
     .head {
         visibility: collapse;
     }
@@ -1226,7 +1236,7 @@ footer .copyright a:hover {
         flex-direction: column !important;
         align-items: center;
         background-color: #265e3d;
-        margin-top: 35px;
+        margin-top: 30px;
         margin-bottom: 0px;
     }
 

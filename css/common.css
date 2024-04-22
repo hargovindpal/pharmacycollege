@@ -46,7 +46,8 @@ background-color: #19e9c6;
     margin-top:-50px !important;
 }
 .space-2{
-    margin-top:110px !important;
+    position: relative;
+    top:80px !important;
 }
 
 /* h1 Tag Gradient Color CSS Start */
