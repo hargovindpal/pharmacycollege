@@ -43,7 +43,10 @@ background-color: #19e9c6;
 }
 
 .space{
-    margin-top:110px;
+    margin-top:-50px !important;
+}
+.space-2{
+    margin-top:110px !important;
 }
 
 /* h1 Tag Gradient Color CSS Start */
@@ -121,9 +124,7 @@ i:hover {
 
 .container-2 .content p {
     
-    padding: 10px 10px;
-    font-size: 15px;
-    font-family: Arial;
+    padding: 5px 0px;
     line-height: 20px;
     text-align: justify;
 }
@@ -172,13 +173,26 @@ i:hover {
     color: transparent;
     animation: effect 3s linear infinite;
 }
+.main-heading{
+   position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:150px;
+    
+}
 
+.main-heading h1 {
+    font-weight: bolder;
+    color: transparent;
+    animation: effect 3s linear infinite;
+}
 
 
 .text-container {
     width: 100%;
-    padding: 10px;
-    margin-top: 110px;
+    padding: 30px;
+    margin-top: 130px;
     background: none;
 }
 
@@ -198,7 +212,8 @@ i:hover {
 }
 
 .text-container p {
-    margin-left: 10px;
+    margin-left: 0px;
+    margin-top:20px;
     flex-wrap: wrap;
     flex-direction: column;
     color: black;
@@ -236,11 +251,6 @@ i:hover {
     transform: scale(1.2);
     transition: all 2s ease-in;
 }
-
-
-
-
-
 
 
 img {

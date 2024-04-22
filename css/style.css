@@ -9,7 +9,7 @@
 }
 
 body {
-
+overflow-x: hidden;
     background-color: white;
 }
 
@@ -1498,6 +1498,13 @@ footer .copyright a:hover {
         width: 100%;
 
 
+    }
+
+    .main-heading{
+        padding:5px;
+        font-size: 15px;
+        top:80px !important;
+        text-align: center;
     }
 
     .inside-container {
