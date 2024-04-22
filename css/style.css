@@ -1218,7 +1218,6 @@ footer .copyright a:hover {
     .head .nav-bar {
         display: inline;
         justify-content: left;
-
         position: relative;
 
     }
@@ -1227,7 +1226,7 @@ footer .copyright a:hover {
         flex-direction: column !important;
         align-items: center;
         background-color: #265e3d;
-        margin-top: 37px;
+        margin-top: 35px;
         margin-bottom: 0px;
     }
 
