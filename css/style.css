@@ -535,7 +535,9 @@ figure img {
 .social-media .elem:hover i.fa-youtube {
     color: red;
 }
-
+.fa-youtube{
+    color:red;
+}
 
 
 .slide-container {
