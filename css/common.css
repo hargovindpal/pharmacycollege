@@ -213,7 +213,7 @@ i:hover {
 }
 
 .text-container p {
-    margin-left: 0px;
+    margin-left: 10px;
     margin-top:20px;
     flex-wrap: wrap;
     flex-direction: column;
@@ -221,7 +221,13 @@ i:hover {
     line-height: 25px;
     z-index: 5;
 }
-
+.text-container p::before{
+    content: ' ⊳';
+    margin-left:-10px !important;
+    font-weight: bolder;
+    font-size: 25px;
+    color:#265e3d;
+}
 
 
 .show-big-container {
