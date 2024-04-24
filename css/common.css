@@ -213,6 +213,8 @@ i:hover {
 }
 
 .text-container p {
+    justify-content: justify;
+    padding:0px 10px;
     margin-left: 10px;
     margin-top:20px;
     flex-wrap: wrap;
@@ -222,13 +224,36 @@ i:hover {
     z-index: 5;
 }
 .text-container p::before{
-    content: ' ⊳';
-    margin-left:-10px !important;
+    content: ' ⊳ ';
+    margin-left:-20px !important;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 20px;
     color:#265e3d;
 }
+.item-center{
+    text-align: center;
+}
+table{
+    width:100%; 
+    border:0.75pt solid #ffffff; 
+    border-collapse:collapse;
+}
 
+
+.table-heading{
+    color:white;
+    background-color:#5f9ea0;
+    font-weight: 650;
+    border:1px solid white;
+
+}
+.table-data{
+    color:black;
+    background-color:#dddddd;;
+    font-size: 15px;
+    border:1px solid white;
+
+}
 
 .show-big-container {
     position: fixed;
