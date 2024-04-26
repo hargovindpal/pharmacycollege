@@ -21,23 +21,23 @@
 
 //    script to show big image after click on
 
-// var imageContainer = document.querySelector('.container-2');
-// var bigImage = document.querySelector('.big-image');
-// var smallImages = document.querySelectorAll('.image');
+ var imageContainer = document.querySelector('.show-big-container');
+ var bigImage = document.querySelector('.big-image');
+ var smallImages = document.querySelectorAll('.image');
 
-// smallImages.forEach(function(smallImage) 
-// {
-// smallImage.addEventListener('click',()=>{
-// bigImage.src = smallImage.src;
-// imageContainer.style.display = 'flex';
-// document.body.style.overflow = 'hidden';
-// });
-// });
+ smallImages.forEach(function(smallImage) 
+ {
+ smallImage.addEventListener('click',()=>{
+ bigImage.src = smallImage.src;
+ imageContainer.style.display = 'flex';
+ document.body.style.overflow = 'hidden';
+ });
+ });
 
-//bigImage.addEventListener('click',()=>{
-//    imageContainer.style.display = 'none';
-//    document.body.style.overflow = 'auto';
-// });
+bigImage.addEventListener('click',()=>{
+    imageContainer.style.display = 'none';
+    document.body.style.overflow = 'auto';
+ });
     
 
 
