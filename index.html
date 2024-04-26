@@ -338,6 +338,49 @@
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 
+    <script>
+    //Enquiry form control script
+    
+    var enqry = document.querySelector('.enquiry-btn')
+    var cancel = document.querySelector('.fa-xmark')
+    var showform = document.querySelector('.form-container')
+    
+    window.onload =function(){
+
+        if (showform) {
+            setTimeout(() => {
+                showform.style.display = 'inline';
+            }, 2000);
+            clearTimeout();
+        }
+    };
+
+    enqry.addEventListener('click', function(e){
+        e.stopPropagation();
+        showform.style.display = 'inline';
+    })
+    cancel.addEventListener('click', function(e){
+        e.stopPropagation();
+        showform.style.display = 'none';
+    })
+
+    window.addEventListener('click', ()=>{
+
+        showform.style.display = 'none';
+    })
+     showform.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+
+    document.addEventListener('keydown', (e)=>{
+        if(e.key === "Escape"){
+            showform.style.display = 'none';
+        }
+    } ) 
+
+
+    </script>
+
 </body>
 
 </html>
