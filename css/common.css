@@ -224,7 +224,7 @@ i:hover {
     z-index: 5;
 }
 .text-container p::before{
-    content: ' ⊳ ';
+    content: '  ➣ ';
     margin-left:-20px !important;
     font-weight: bolder;
     font-size: 20px;
