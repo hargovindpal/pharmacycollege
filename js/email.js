@@ -11,8 +11,7 @@ function emailSend(){
 	"<br/> Phone " + phone +
 	"<br/> Email " + whatsapp;
     "<br/> Email " + email;
-    "<br/> Email " + course;
-    "<br/> Email " + message;
+    
 	Email.send({
     Host : "smtp.elasticemail.com",
     Username : "hargovindpal4@gmail.com",
