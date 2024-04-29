@@ -44,7 +44,7 @@
             <div class="form-container">
                     
                 <div class="cancel"><i class="fa-sharp fa-solid fa-xmark"></i></div>
-                <form class="enqry-form" method="post">
+                <form onsubmit="emailsend()" class="enqry-form">
                     <h1>ENQUIRY-FORM</h1>
                     <div class="error-msg" style="display: none;"></div>
                     
@@ -332,18 +332,18 @@
     
     </footer>
     
-    
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="js/script.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
+   
 
     <script>
     //Enquiry form control script
     
-    var enqry = document.querySelector('.enquiry-btn')
-    var cancel = document.querySelector('.fa-xmark')
-    var showform = document.querySelector('.form-container')
+    
     
     window.onload =function(){
 
@@ -354,30 +354,6 @@
             clearTimeout();
         }
     };
-
-    enqry.addEventListener('click', function(e){
-        e.stopPropagation();
-        showform.style.display = 'inline';
-    })
-    cancel.addEventListener('click', function(e){
-        e.stopPropagation();
-        showform.style.display = 'none';
-    })
-
-    window.addEventListener('click', ()=>{
-
-        showform.style.display = 'none';
-    })
-     showform.addEventListener('click', function(e) {
-        e.stopPropagation();
-    });
-
-    document.addEventListener('keydown', (e)=>{
-        if(e.key === "Escape"){
-            showform.style.display = 'none';
-        }
-    } ) 
-
 
     </script>
 

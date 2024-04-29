@@ -1,3 +1,38 @@
+    
+    // Enquiry Form Control
+
+    var enqry = document.querySelector('.enquiry-btn')
+    var cancel = document.querySelector('.fa-xmark')
+    var showform = document.querySelector('.form-container')
+
+    enqry.addEventListener('click', function(e){
+      e.stopPropagation();
+      showform.style.display = 'inline';
+  })
+  cancel.addEventListener('click', function(e){
+      e.stopPropagation();
+      showform.style.display = 'none';
+  })
+
+  window.addEventListener('click', ()=>{
+
+      showform.style.display = 'none';
+  })
+   showform.addEventListener('click', function(e) {
+      e.stopPropagation();
+  });
+
+  document.addEventListener('keydown', (e)=>{
+      if(e.key === "Escape"){
+          showform.style.display = 'none';
+      }
+  } ) 
+
+    
+    
+    
+    
+    
     var nav_item = document.querySelector('.nav-bar')
     var slickContainer = document.querySelector('.slick-container')
 
@@ -62,4 +97,17 @@ function scrollToTop() {
 }
 
 
-
+//sending email section
+function emailsend(){
+Email.send({
+  Host : "smtp.elasticemail.com",
+  Username : "hargovindpal4@gmail.com",
+  Password : "CBFEA3312591F0FBBD5DD14F33E1B6E2940D",
+  To : 'ecare@mpsjhansi.org',
+  From : "hargovindpal4@gmail.com",
+  Subject : "This is the subject",
+  Body : "And this is the body"
+}).then(
+message => alert(message)
+);
+}
