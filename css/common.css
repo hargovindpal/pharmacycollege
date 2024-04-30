@@ -215,7 +215,7 @@ i:hover {
 .text-container p {
     justify-content: justify;
     padding:0px 10px;
-    margin-left: 10px;
+    margin-left: 25px;
     margin-top:20px;
     flex-wrap: wrap;
     flex-direction: column;
@@ -225,7 +225,7 @@ i:hover {
 }
 .text-container p::before{
     content: '  ➣ ';
-    margin-left:-20px !important;
+    margin-left:-25px !important;
     font-weight: bolder;
     font-size: 20px;
     color:#265e3d;

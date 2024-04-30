@@ -9,15 +9,17 @@ function emailSend(){
 
 	var messageBody = "Name " + userName +
 	"<br/> Phone " + phone +
-	"<br/> Email " + whatsapp;
-    "<br/> Email " + email;
+	"<br/> Whatsapp " + whatsapp +
+    "<br/> Email " + email +
+    "<br/> Course " + course +
+    "<br/> Message " + message;
     
 	Email.send({
     Host : "smtp.elasticemail.com",
-    Username : "hargovindpal4@gmail.com",
-    Password : "CBFEA3312591F0FBBD5DD14F33E1B6E2940D",
-    To : 'ecare@mpsjhansi.org',
-    From : "hargovindpal4@gmail.com",
+    Username : "example@gmail.com",
+    Password : "password",
+    To : 'moderncollegeofpharmacyjhansi@gmail.com',
+    From : "example@gmail.com",
     Subject : "This is the subject",
     Body : messageBody
 }).then(
